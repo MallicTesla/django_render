@@ -1,0 +1,28 @@
+{% extends 'menu.html' %}
+
+{% block titulo %} Crear tarea {% endblock  %}
+
+{% block contenido %}
+    {{ block.super }}
+
+    <main class="container">
+        <div class="row">
+            <div class="col-md-4 offset-md-4 mt-5">
+
+                <form action="" method="POST" class="card card-body">
+                    {% csrf_token %}
+
+                    <h1>Crear tarea</h1>
+
+                    {{form.as_p}}
+
+                    <button class="btn btn-primary">
+                        Guardar tarea
+                    </button>
+
+                </form>
+            </div>
+        </div>
+    </main>
+
+{% endblock  %}
