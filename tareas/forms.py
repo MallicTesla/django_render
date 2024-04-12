@@ -8,6 +8,6 @@ class TareaForm (ModelForm):
         fields = ["titulo", "descripsion", "importansia"]
         widgets = {
             "titulo": forms.TextInput (attrs = {"class":"form-control", "placeholder":"Titulo descriptivo"}),
-            "descripsion": forms.Textarea (attrs = {"class":"form-control", "placeholder":"Pone la descripsion"}),
+            "descripsion": forms.Textarea (attrs = {"class":"form-control", "placeholder":"Pone la descripción"}),
             "importansia": forms.CheckboxInput (attrs = {"class":"form-check-input"}),
         }
