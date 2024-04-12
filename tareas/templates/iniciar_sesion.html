@@ -1,6 +1,6 @@
 {% extends 'menu.html' %}
 
-{% block titulo %} Inisio de sesion {% endblock  %}
+{% block titulo %} Inicio de sesion {% endblock  %}
 
 {% block contenido %}
     {{ block.super }}
@@ -12,7 +12,7 @@
                 <form action="{% url 'iniciar_sesion' %}" method="POST" class="card card-body text-center">
                     {% csrf_token %}
 
-                    <h1 class="text-center">Inisio de sesion</h1>
+                    <h1 class="text-center">Inicio de sesion</h1>
 
                     {{mensaje}}
 
